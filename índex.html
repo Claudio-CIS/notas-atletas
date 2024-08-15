@@ -17,3 +17,274 @@
 </ corpo >
 < script  src =" ./.js/index.js " > </ script >
 </ html >
+
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">  
+    <title>Primeiro projeto de certificacao</title>
+
+        </head>
+
+    <body>
+        <h1>
+        **** Dados dos atletas ****        
+        </h1>
+</body>
+
+<script src="./.js/index.js"></script>
+
+</html>
+<h1>
+     <h3>
+        <p>
+            Aplicacao para receber o nome e as notas dos atletas, calcular a media e apresentar o resultado ao usuario.
+            <br>
+            Aplicacao para receber os dados dos atletas.
+        </p>
+    </h3> 
+</h1>
+
+    <document class="write"></document>
+
+	<div style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+
+		<h2>Calculadora BASICA</h2>
+
+            
+
+		Valor 1: <input id="dvInput1" type="number" placeholder="0"><br><br>
+		Valor 2: <input id="dvInput2" type="number" placeholder="0"><br><br>
+
+	    Operacao:
+
+		<button type="button" onclick="dvCalcular(OPERACAO_SOMA)">+</button>&nbsp;
+            
+		<button type="button" onclick="dvCalcular(OPERACAO_SUBTRACAO)">-</button>&nbsp;
+
+		<button type="button" onclick="dvCalcular(OPERACAO_MULTIPLICACAO)">*</button>&nbsp;
+
+		<button type="button" onclick="dvCalcular(OPERACAO_DIVISAO)">/</button><br><br>
+
+		Resultado: 
+        
+        <span id="dvResultadoCalculo" style="border: solid 1px #aaa; padding:3px;">0</span>
+
+	</div>
+    
+<br>
+
+<!DOCTYPE html>
+
+<html>
+<head> 
+<body>
+    <h1>
+        Calculadora IMC       
+    </h1>     
+            
+    <script type="text/javascript">
+    const calculaImc = () => {
+    const altura = document.imcForm.elements["altura"].value;
+    const peso = document.imcForm.elements["peso"].value;    
+
+    const imc = peso /(altura * altura);
+
+        if(imc < 18.5){
+        alert("Voce esta abaixo dopeso");  
+        }
+        else if(imc >= 18.5 && imc < 25){
+        alert("voce esta com o peso normal");
+        }
+        else if(imc >= 25 && imc < 40){
+        alert("voce esta com sobrepeso");
+        }
+         else if(imc >= 40){
+        alert("voce esta com obesidade grave");
+        }
+
+    } 
+
+    </script>
+    </head>
+
+    <body>
+    <form id="imcForm" name="imcForm" action="#">
+    <label for="altura">insira a altura:</label>
+    <input type="text" id="altura" name="altura" placeholder="0"><br>
+
+     <br>
+
+    <label for="peso">insira o peso:</label>    
+    <input type="text" id="peso" name="peso" placeholder="0"><br>
+
+    <br>
+
+    <input type="submit" value="calcular" onclick="calculaImc()">
+
+    </form>           
+    </body>
+</html>
+<br>
+
+
+
+<!DOCTYPE html>
+<html>
+<head> 
+<body>
+    <h1>
+        Nota dos Atletas       
+    </h1>     
+       
+    <script type="text/javascript">
+
+</script>
+
+</body>
+
+</head>
+
+</html>
+
+
+Apresentação no Solo
+
+<br><br>
+
+<table>
+
+  <tr>
+
+    <td>
+
+    <td> -- Bruno Castro --</td>
+  
+    <td> duração da apresentação </td>
+
+    <td> originalidade da coreografia </td>
+
+    <td> postura do atleta </td>
+
+    <td> dificuldade das acrobacias </td>
+
+    <td> sincronismo </td>
+
+    <td> Mèdia </td>
+
+  </tr>
+
+  <tr></tr>
+
+      <td> Notas solo  = </td><td></td>
+
+      <td> 10</td>
+
+      <td>10</td>
+
+      <td>10</td>
+
+      <td>9</td>
+
+      <td>9.5</td>
+
+      <td>9.83333333333</td>
+
+  </tr>
+  
+</table>   
+<br>
+
+<table>
+
+  <tr>
+
+    <td>
+
+    <td> -- Cesar Abascal -- </td>
+
+    <td> duração da apresentação </td>
+
+    <td> originalidade da coreografia </td>
+
+    <td> postura do atleta </td>
+
+    <td> dificuldade das acrobacias </td>
+
+    <td> sincronismo </td>
+
+    <td> Mèdia </td>
+
+  </tr>
+
+  <tr><tr></tr>
+
+      <td>Notas solo = </td><td></td>
+      <td>10</td>
+      <td>10</td>
+      <td>7.88</td>
+      <td>8.42</td>
+      <td>9.34</td>
+      <td>9,253333</td>
+  </tr>
+</table>   
+<br>
+
+<table>
+  <tr>
+    <td></td>
+    <td> --Daiane Jelinsky-- </td>
+    <td>duração da apresentação</td>
+    <td>originalidade da coreografia</td>
+    <td>postura do atleta</td>
+    <td>dificuldade das acrobacias</td>
+    <td>sincronismo</td>
+    <td>Mèdia</td>
+  </tr>
+  <tr>
+      <td>Notas solo = </td><td></td>
+      <td>10</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9.5</td>
+      <td>9.5</td>
+      <td>9</td>
+  </tr>
+</table>   
+<br>
+
+<table>
+
+  <tr>
+
+    <td></td>
+
+    <td> --Fernando Puntel-- </td>
+
+    <td>duracao da apresentacao:__</td>
+
+    <td>originalidade da coreografia:__</td>
+
+    <td>postura do atleta:__</td>
+
+    <td>dificuldade das acrobacias:__</td>
+
+    <td> sincronismo:__</td>
+
+    <td>Media</td><td></td>
+
+  </tr>
+
+  <tr>
+    <td>Notas solo = </td><td></td>
+      <td>________10</td>
+      <td>________10</td>
+      <td>________7</td>
+      <td>________8</td>
+      <td>____9.33</td>
+      <td>_9.11</td>
+  </tr>
+</table>   
