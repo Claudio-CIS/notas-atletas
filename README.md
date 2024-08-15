@@ -153,4 +153,79 @@ Os outros são atletismo, esgrima e natação.
       <td>9.11</td>
   </tr>
 </table>   
+</br>
+
+
+<!DOCTYPE html>
+
+<html>
+<head> 
+<body>
+    <h1>
+       ## Calculadora IMC       
+    </h1>     
+            
+    <script type="text/javascript">
+    const calculaImc = () => {
+    const altura = document.imcForm.elements["altura"].value;
+    const peso = document.imcForm.elements["peso"].value;    
+
+    const imc = peso /(altura * altura);
+
+        if(imc < 18.5){
+        alert("Voce esta abaixo dopeso");  
+        }
+        else if(imc >= 18.5 && imc < 25){
+        alert("voce esta com o peso normal");
+        }
+        else if(imc >= 25 && imc < 40){
+        alert("voce esta com sobrepeso");
+        }
+         else if(imc >= 40){
+        alert("voce esta com obesidade grave");
+        }
+
+    } 
+
+    </script>
+    </head>
+
+    <body>
+    <form id="imcForm" name="imcForm" action="#">
+    <label for="altura">insira a altura:</label>
+    <input type="text" id="altura" name="altura" placeholder="0"><br>
+
+     <br>
+
+    <label for="peso">insira o peso:</label>    
+    <input type="text" id="peso" name="peso" placeholder="0"><br>
+
+    <br>
+
+    <input type="submit" value="calcular" onclick="calculaImc()">
+
+    </form>           
+    </body>
+</html>
 <br>
+
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">  
+    <title>Primeiro projeto de certificacao</title>
+
+        </head>
+
+    <body>
+        <h1>
+        **** Dados dos atletas ****        
+        </h1>
+</body>
+
+<script src="./.js/index.js"></script>
+
+</html>
