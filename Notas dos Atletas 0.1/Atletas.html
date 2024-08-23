@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <img src="./img/Logo da Competicao.jpg">         
+        <h2>calculadora de IMC</h2>
+
+        <script type="text/javascript">
+
+                const calculaIMC =(event) => {
+                    event.preventDefault();
+
+                const altura = parseFloat(document.imcForm.elements["altura"].value);
+
+                const peso = parseFloat(document.imcForm.elements["peso"].value);
+
+                if (isNaN(altura) || isNaN(peso) || altura <= 0 || peso <=0){
+                    alert("Por favor, insira valores válidos para altura e peso.");
+                    return;
+                    
+
+                }
+                const imc = peso/(altura * altura);
+
+                if(imc < 18.5){
+                    alert("Voce esta abaixo do peso");
+                }
+                else if(imc >= 18.5 && imc < 25){
+                    alert("Voce esta com peso normal");
+                }
+                else if(imc >= 25 && imc < 30){
+                    alert("Voce esta com sobrepeso");
+                }
+                else if(imc >= 30 && imc < 40){
+                    alert("Voce esta com obesidade");
+                }
+                else if(imc >= 40){
+                    alert("Voce esta com obesidade grave");
+                }
+
+            }
+        </script>  
+    </head>
+
+    <body>
+
+        <form id="imcForm" name="imcForm" action="#">
+
+            <label for="altura">Insira a altura</label>
+                <input type="text" id="altura" name="altura">
+                    <br>
+
+             <label for="peso">Insira o peso</label>    
+                <input type="text" id="peso" name="peso">
+                    <br>
+
+            <input type="submit" value="calcular" onclick="calculaIMC(event)">
+
+        </form>
+    
+
+    <H1>Atletas</H1>
+
+    <h2>Bruno Castro</h2>
+    <img src="./img/Bruno Castro.png">
+
+    <h2>Cesar Abascal</h2>
+    <img src="./img/Cesar Abascal.jpg">
+
+    <h2>Daiane Jelinsky</h2>
+    <img src="./img/Daiane Jelinsky.jpeg">
+
+    <h2>Fernando Puntel</h2>
+    <img src="./img/Fernando Puntel.png">
+    
+</body>
+</html>
+
+
+     
+
+     
